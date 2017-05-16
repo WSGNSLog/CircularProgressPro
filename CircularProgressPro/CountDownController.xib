@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountDownController">
+            <connections>
+                <outlet property="circleProgressView" destination="Ra3-id-icW" id="GBd-pa-sQX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ra3-id-icW" customClass="CircleProgressView">
+                    <rect key="frame" x="87" y="45" width="200" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ra3-id-icW" secondAttribute="height" multiplier="1:1" id="wPp-BZ-KCx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90588235289999997" green="0.93333333330000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ra3-id-icW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="200:667" id="0pg-PQ-eRB"/>
+                <constraint firstItem="Ra3-id-icW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="QcJ-7k-5xg"/>
+                <constraint firstItem="Ra3-id-icW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qJE-4a-7c3"/>
+            </constraints>
+            <point key="canvasLocation" x="38.5" y="72.5"/>
+        </view>
+    </objects>
+</document>
